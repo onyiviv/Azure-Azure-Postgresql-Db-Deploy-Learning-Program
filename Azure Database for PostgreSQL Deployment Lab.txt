@@ -1,0 +1,14 @@
+# Azure Database for PostgreSQL Deployment Lab
+
+## 🌐 Configuration Summary
+- **Region:** Central India (Selected to optimize regional availability and resource limits)
+- **Deployment Option:** Flexible Server (Allows granular network configurations and parameter tuning)
+- **Compute Tier:** Burstable Tier (`Standard_B1ms` - 1 vCPU, 2 GiB RAM) 
+- **Storage:** 32 GiB (With Auto-grow enabled to gracefully handle schema additions)
+
+## 🔒 Security & Networking Settings
+- **Firewall Isolation:** Restricted public network exposure by white-listing specific client endpoints using explicit firewall configurations.
+- **Data-in-Transit Encryption:** Enforced native TLS 1.2 communication channels across database client connections to guarantee secure transport sessions.
+
+## 💾 Backup & High Availability
+- **Automated Restores:** Verified configuration for Point-in-Time Restore (PITR) functionality with 7 days of log retention.
